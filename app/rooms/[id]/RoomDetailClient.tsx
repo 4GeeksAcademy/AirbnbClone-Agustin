@@ -59,7 +59,7 @@ export default function RoomDetailClient() {
       <nav className="mb-4">
         <Link
           href="/catalog"
-          className="inline-flex items-center gap-1 text-sm text-gray-500 transition-colors hover:text-gray-900"
+          className="inline-flex items-center gap-1 text-sm text-amber-600 transition-colors hover:text-amber-900"
         >
           <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 12H5m7-7l-7 7 7 7" />
@@ -77,29 +77,29 @@ export default function RoomDetailClient() {
 
           {/* Room summary header */}
           <div className="space-y-2">
-            <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+            <h1 className="text-2xl font-bold text-amber-950 sm:text-3xl">
               {listing.title}
             </h1>
-            <div className="flex items-center gap-2 text-sm text-gray-600">
+            <div className="flex items-center gap-2 text-sm text-amber-700">
               <StarRating rating={listing.rating} reviewCount={listing.reviews} />
-              <span className="text-gray-300">·</span>
+              <span className="text-amber-300">·</span>
               <span>{listing.location}</span>
             </div>
           </div>
 
           {/* Divider */}
-          <div className="border-t border-amber-100" />
+          <div className="border-t border-amber-200" />
 
           {/* Host info */}
           <HostInfo host={listing.host} />
 
           {/* Divider */}
-          <div className="border-t border-amber-100" />
+          <div className="border-t border-amber-200" />
 
           {/* About this place */}
           <div className="space-y-3">
-            <h2 className="text-lg font-semibold text-gray-900">About this place</h2>
-            <p className="text-sm leading-relaxed text-gray-600">
+            <h2 className="text-lg font-semibold text-amber-950">About this place</h2>
+            <p className="text-sm leading-relaxed text-amber-800">
               Enjoy a memorable stay at {listing.title}. Located in {listing.location}, this
               accommodation offers a comfortable experience with all the amenities you need
               for a relaxing trip. Hosted by {listing.host.name}, who has been welcoming
@@ -108,11 +108,11 @@ export default function RoomDetailClient() {
           </div>
 
           {/* Divider */}
-          <div className="border-t border-amber-100" />
+          <div className="border-t border-amber-200" />
 
           {/* Amenities / Services */}
           <div className="space-y-4">
-            <h2 className="text-lg font-semibold text-gray-900">What this place offers</h2>
+            <h2 className="text-lg font-semibold text-amber-950">What this place offers</h2>
             <AmenitiesGrid amenities={listing.amenities} />
           </div>
         </div>

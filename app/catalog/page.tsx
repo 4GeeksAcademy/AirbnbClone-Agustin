@@ -15,8 +15,8 @@ const MapPlaceholder = dynamic(
   () => import("@/components/MapPlaceholder"),
   { ssr: false,
     loading: () => (
-      <div className="flex h-full min-h-[300px] w-full items-center justify-center rounded-xl bg-gradient-to-br from-amber-50 to-amber-100">
-        <p className="text-sm font-medium text-amber-600">Loading map…</p>
+      <div className="flex h-full min-h-[300px] w-full items-center justify-center rounded-xl bg-gradient-to-br from-amber-100 to-amber-200">
+        <p className="text-sm font-medium text-amber-700">Loading map…</p>
       </div>
     ),
   }
@@ -86,7 +86,7 @@ export default function CatalogPage() {
           {loading ? (
             <LoadingSpinner />
           ) : filteredListings.length === 0 ? (
-            <p className="py-20 text-center text-base text-gray-600">
+            <p className="py-20 text-center text-base text-amber-700">
               No listings found. Try a different search or category.
             </p>
           ) : (

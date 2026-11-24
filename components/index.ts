@@ -19,3 +19,5 @@ export { default as PhotoGallery } from "./PhotoGallery";
 export { default as HostInfo } from "./HostInfo";
 export { default as AmenitiesGrid } from "./AmenitiesGrid";
 export { default as BookingCard } from "./BookingCard";
+export { default as DateRangeFields } from "./DateRangeFields";
+export { default as GuestCounter } from "./GuestCounter";

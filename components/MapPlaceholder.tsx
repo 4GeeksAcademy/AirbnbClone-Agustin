@@ -29,8 +29,8 @@ function MapBoundsFitter({ listings }: { listings: Listing[] }) {
 export default function MapPlaceholder({ listings }: MapViewProps) {
   if (listings.length === 0) {
     return (
-      <div className="flex h-full min-h-[300px] w-full items-center justify-center rounded-xl bg-gradient-to-br from-amber-50 to-amber-100">
-        <p className="text-sm font-medium text-amber-600">
+      <div className="flex h-full min-h-[300px] w-full items-center justify-center rounded-xl bg-gradient-to-br from-amber-100 to-amber-200">
+        <p className="text-sm font-medium text-amber-700">
           No listings to show on map
         </p>
       </div>

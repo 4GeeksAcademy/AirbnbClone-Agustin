@@ -56,7 +56,7 @@ export default function Home() {
         {loading ? (
           <LoadingSpinner />
         ) : filteredListings.length === 0 ? (
-          <p className="py-20 text-center text-base text-gray-600">
+          <p className="py-20 text-center text-base text-amber-700">
             No listings found. Try a different search or category.
           </p>
         ) : (

@@ -9,9 +9,9 @@ export default function StarRating({ rating, reviewCount }: StarRatingProps) {
   return (
     <div className="flex items-center gap-1">
       <span className="text-sm">⭐</span>
-      <span className="text-sm font-semibold text-gray-900">{rating}</span>
+      <span className="text-sm font-semibold text-amber-950">{rating}</span>
       {reviewCount !== undefined && (
-        <span className="text-sm text-gray-600">({reviewCount})</span>
+        <span className="text-sm text-amber-600">({reviewCount})</span>
       )}
     </div>
   );

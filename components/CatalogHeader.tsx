@@ -12,21 +12,21 @@ export default function CatalogHeader({
   onSortChange,
 }: CatalogHeaderProps) {
   return (
-    <div className="flex items-center justify-between border-b border-amber-100 bg-[#fffdf9] px-4 py-3 sm:px-6 lg:px-8">
-      <p className="text-sm font-medium text-gray-700">
-        <span className="font-bold text-gray-900">{totalResults}</span>{" "}
+    <div className="flex items-center justify-between border-b border-amber-200 bg-[#fdf1e6] px-4 py-3 sm:px-6 lg:px-8">
+      <p className="text-sm font-medium text-amber-700">
+        <span className="font-bold text-amber-950">{totalResults}</span>{" "}
         {totalResults === 1 ? "result" : "results"}
       </p>
 
       <div className="flex items-center gap-2">
-        <label htmlFor="sort" className="text-sm text-gray-500">
+        <label htmlFor="sort" className="text-sm text-amber-600">
           Sort by
         </label>
         <select
           id="sort"
           value={sortOrder}
           onChange={(e) => onSortChange(e.target.value as SortOrder)}
-          className="rounded-lg border border-amber-200 bg-[#fffdf9] px-3 py-1.5 text-sm font-medium text-gray-800 shadow-sm focus:border-rose-400 focus:outline-none focus:ring-2 focus:ring-rose-400/20"
+          className="rounded-lg border border-amber-300 bg-[#fdf1e6] px-3 py-1.5 text-sm font-medium text-amber-800 shadow-sm focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500/20"
         >
           <option value="asc">Price: Low to High</option>
           <option value="desc">Price: High to Low</option>

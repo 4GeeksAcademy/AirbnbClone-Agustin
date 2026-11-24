@@ -13,7 +13,7 @@ export default function Input({
   return (
     <div className="space-y-1">
       {label && (
-        <label htmlFor={id} className="block text-sm font-medium text-gray-700">
+        <label htmlFor={id} className="block text-sm font-medium text-amber-800">
           {label}
         </label>
       )}

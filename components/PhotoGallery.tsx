@@ -18,16 +18,16 @@ export default function PhotoGallery({ photos, title }: PhotoGalleryProps) {
 
   if (photos.length === 0) {
     return (
-      <div className="flex h-64 w-full items-center justify-center rounded-xl bg-amber-50">
+      <div className="flex h-64 w-full items-center justify-center rounded-xl bg-amber-100">
         <span className="text-4xl">🏡</span>
       </div>
     );
   }
 
   return (
-    <div className="relative w-full overflow-hidden rounded-xl bg-amber-50">
+    <div className="relative w-full overflow-hidden rounded-xl bg-amber-100">
       {/* Photo */}
-      <div className="flex aspect-[16/9] w-full items-center justify-center bg-gradient-to-br from-amber-100 via-rose-50 to-amber-200">
+      <div className="flex aspect-[16/9] w-full items-center justify-center bg-gradient-to-br from-amber-200 via-rose-100 to-amber-300">
         <span className="text-6xl">📷</span>
       </div>
 
